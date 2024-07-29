@@ -14,6 +14,7 @@ public class FibonacciServiceImpl implements FibonacciService {
   @Autowired
   private FibonacciRepository fibonacciRepository;
 
+
   @Override
   public List<Integer> generateFibonacciSeries(int x, int y, int n) {
     List<Integer> series = new ArrayList<>();
@@ -25,8 +26,9 @@ public class FibonacciServiceImpl implements FibonacciService {
       series.add(next);
     }
 
-    List<Integer> result = new ArrayList<>(series.subList(series.size() - n, series.size()));
-    result.sort((a, b) -> b - a);
+    // Obtenemos solo los n números requeridos de la serie generada
+    List<Integer> result = new ArrayList<>(series.subList(2, n + 2));
+    result.sort((a, b) -> b - a); // Orden descendente
 
     return result;
   }

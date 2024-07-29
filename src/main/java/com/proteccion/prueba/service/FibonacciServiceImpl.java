@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -26,9 +27,11 @@ public class FibonacciServiceImpl implements FibonacciService {
       series.add(next);
     }
 
-    // Obtenemos solo los n números requeridos de la serie generada
+    // Obtener solo los números requeridos de la serie generada
     List<Integer> result = new ArrayList<>(series.subList(2, n + 2));
-    result.sort((a, b) -> b - a); // Orden descendente
+
+    // Invertir la lista para tener los números en orden descendente
+    Collections.reverse(result);
 
     return result;
   }

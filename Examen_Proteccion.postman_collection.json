@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "535fc3ff-0dce-40bd-af63-2e1f03874076",
+		"name": "Examen_Proteccion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18755636"
+	},
+	"item": [
+		{
+			"name": "Listar Series",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/fibonacci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fibonacci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generar fibonacci",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"12:23:04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fibonacci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fibonacci"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generar fibonacci 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"12:23:04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/fibonacci",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fibonacci"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
